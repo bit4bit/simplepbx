@@ -37,6 +37,16 @@ Modulos requeridos
   * inicializar base de datos **bundle exec rake db:create; bundle exec rake db:migrate; bundle exec rake db:seed**
   * se crea el usuario por defecto **admin@simplepbx.com:simplepbx**
   
+# INSTALACION docker-compose
+
+  * clonar repositorio
+  * **docker-compose up**
+  * inicializar base de datos
+    * **docker-compose run web db:create**
+    * **docker-compose run web db:migrate**
+    * **docker-compose run web db:seed**
+  * ingresar con usuario **admin@simplepbx.com** y clave **simplepbx**
+  
 ## CONFIGURACION FREESWITCH-MOD-XML-CURL
 
 Configurar el modulo **xml_curl**, reemplazar **localhost:3000** con la URL del servidor instalado:
